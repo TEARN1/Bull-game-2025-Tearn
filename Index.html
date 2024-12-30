@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bull-running</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    #canvas {
+      width: 800px;
+      height: 600px;
+      border: 1px solid black;
+    }
+    #ui-container {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div id="ui-container">
+    <h2>Betting Options</h2>
+    <input type="number" id="bet-input" placeholder="Bet Amount">
+    <button id="bet-button">Place Bet</button>
+    <button id="game-over-button">Game Over</button>
+    <h2>Current Balance</h2>
+    <p id="balance">$0</p>
+    <h2>Bull Distance</h2>
+    <p id="distance">0m</p>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
